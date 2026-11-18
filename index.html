@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>问答通隐私政策</title>
+  <meta name="description" content="问答通（Windows）隐私政策：说明本机资料处理、由您配置的模型服务以及您的权利。" />
+  <style>
+    :root {
+      --bg: #f7f4ef;
+      --surface: #fffdf9;
+      --ink: #1c1917;
+      --muted: #57534e;
+      --line: #e7e0d5;
+      --accent: #0f4c5c;
+      --warn-bg: #fff7ed;
+      --warn-ink: #9a3412;
+      --max: 42rem;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      color: var(--ink);
+      background:
+        radial-gradient(1200px 500px at 10% -10%, #e8f0f2 0%, transparent 55%),
+        var(--bg);
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, "Songti SC", "Source Han Serif SC", serif;
+      font-size: 17px;
+      line-height: 1.7;
+    }
+    .wrap {
+      max-width: calc(var(--max) + 4rem);
+      margin: 0 auto;
+      padding: 2.5rem 1.25rem 4rem;
+    }
+    header {
+      margin-bottom: 2rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid var(--line);
+    }
+    .brand {
+      font-family: "Avenir Next", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      margin: 0 0 0.75rem;
+    }
+    h1 {
+      font-family: "Avenir Next", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      font-weight: 650;
+      line-height: 1.25;
+      margin: 0 0 0.75rem;
+      letter-spacing: -0.02em;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin: 0;
+      font-family: "Avenir Next", "PingFang SC", sans-serif;
+    }
+    .meta a { color: var(--accent); }
+    nav.toc {
+      margin: 1.75rem 0 2rem;
+      padding: 1rem 1.1rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+    nav.toc strong {
+      display: block;
+      font-family: "Avenir Next", "PingFang SC", sans-serif;
+      font-size: 0.85rem;
+      margin-bottom: 0.5rem;
+    }
+    nav.toc ol {
+      margin: 0;
+      padding-left: 1.2rem;
+      columns: 1;
+      font-family: "Avenir Next", "PingFang SC", sans-serif;
+      font-size: 0.9rem;
+    }
+    @media (min-width: 720px) {
+      nav.toc ol { columns: 2; gap: 1.5rem; }
+    }
+    nav.toc a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    nav.toc a:hover { text-decoration: underline; }
+    main section {
+      margin: 2rem 0;
+      scroll-margin-top: 1rem;
+    }
+    h2 {
+      font-family: "Avenir Next", "PingFang SC", "Hiragino Sans GB", sans-serif;
+      font-size: 1.25rem;
+      font-weight: 650;
+      margin: 0 0 0.85rem;
+      color: var(--accent);
+    }
+    h3 {
+      font-family: "Avenir Next", "PingFang SC", sans-serif;
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin: 1.35rem 0 0.6rem;
+    }
+    p { margin: 0.75rem 0; }
+    ul, ol { margin: 0.5rem 0 0.75rem; padding-left: 1.35rem; }
+    li { margin: 0.25rem 0; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      margin: 0.85rem 0 1rem;
+      font-family: "Avenir Next", "PingFang SC", sans-serif;
+      background: var(--surface);
+    }
+    th, td {
+      border: 1px solid var(--line);
+      padding: 0.55rem 0.65rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f0ebe3;
+      font-weight: 600;
+    }
+    code {
+      font-family: ui-monospace, "SF Mono", Menlo, monospace;
+      font-size: 0.88em;
+      background: #efeae2;
+      padding: 0.05em 0.3em;
+      border-radius: 3px;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-family: "Avenir Next", "PingFang SC", sans-serif;
+    }
+    @media print {
+      body { background: #fff; font-size: 11pt; }
+      nav.toc { break-inside: avoid; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <p class="brand">Wendatong · Privacy</p>
+      <h1>问答通隐私政策</h1>
+      <p class="meta">生效日期：2026 年 11 月 18 日　·　更新日期：2026 年 11 月 18 日</p>
+      <p class="meta">处理者：立人达创新工作室（Lirenda）　·　联系：<a href="mailto:ailirenda@163.com">ailirenda@163.com</a></p>
+    </header>
+
+    <nav class="toc" aria-label="目录">
+      <strong>目录</strong>
+      <ol>
+        <li><a href="#s1">我们是谁</a></li>
+        <li><a href="#s2">「收集」与「处理」</a></li>
+        <li><a href="#s3">我们处理哪些信息</a></li>
+        <li><a href="#s4">我们如何使用信息</a></li>
+        <li><a href="#s5">共享与第三方</a></li>
+        <li><a href="#s6">存储、期限与安全</a></li>
+        <li><a href="#s7">跨境提供</a></li>
+        <li><a href="#s8">您的权利</a></li>
+        <li><a href="#s9">未成年人保护</a></li>
+        <li><a href="#s10">第三方产品</a></li>
+        <li><a href="#s11">政策变更</a></li>
+        <li><a href="#s12">Microsoft Store 隐私声明摘要</a></li>
+        <li><a href="#s13">联系我们</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <section id="intro">
+        <p>欢迎使用「问答通」（下称「本应用」或「我们」）。本应用由立人达创新工作室开发并运营，是装在 Windows 上的个人单机版资料问答工具：您把文件放进自建分类，用自然语言提问；回答依据已入库的正文，并标出出处。本政策适用于通过 Microsoft Store 安装的版本，以及在本机运行的同款个人桌面程序。</p>
+        <p>我们深知办公资料与个人信息的重要性。本政策说明我们如何处理与本应用相关的信息，以及您享有的权利。使用本应用即表示您已阅读并理解本政策；涉及需征得同意的处理活动，我们将在相关场景另行取得您的同意。</p>
+        <p>本政策同时参照《中华人民共和国个人信息保护法》《中华人民共和国数据安全法》《中华人民共和国网络安全法》等适用法律，以及 Microsoft Store 对隐私政策的要求编写。</p>
+        <p>如您不同意本政策，请停止使用本应用，并可卸载本应用、删除本机相关数据。</p>
+      </section>
+
+      <section id="s1">
+        <h2>1. 我们是谁（个人信息处理者）</h2>
+        <table>
+          <thead>
+            <tr><th>项目</th><th>内容</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>处理者名称</td><td>立人达创新工作室（Microsoft Store 发布者显示名：Lirenda）</td></tr>
+            <tr><td>产品名称</td><td>问答通</td></tr>
+            <tr><td>平台</td><td>Windows（Microsoft Store 个人单机版）</td></tr>
+            <tr><td>联系方式</td><td><a href="mailto:ailirenda@163.com">ailirenda@163.com</a></td></tr>
+            <tr><td>网站</td><td><a href="https://www.lirenda.cn">https://www.lirenda.cn</a></td></tr>
+          </tbody>
+        </table>
+        <p>您可通过上述邮箱就本政策、个人信息处理、行使权利，以及生成内容不当或有害等事宜与我们联系。我们将在核实身份后尽快答复（一般情况下不超过十五个工作日；法律法规另有规定的从其规定）。</p>
+      </section>
+
+      <section id="s2">
+        <h2>2. 我们如何理解「收集」与「处理」</h2>
+        <ul>
+          <li><strong>本机处理：</strong>资料原文、抽出的文字、检索数据、问答记录和模型配置保存在您的电脑本地，不上传至我们运营的服务器。本应用<strong>不设用户账号，也不设开发者自建的云端用户数据库</strong>。</li>
+          <li><strong>本机检索：</strong>入库后的向量检索在这台电脑上完成。检索所用模型随安装包提供，不因检索而把资料库发给开发者。</li>
+          <li><strong>离开本机：</strong>当您提问时，本应用会把当前问题、同一轮中为追问所需的近期问答，以及从已可提问资料中检索出的摘录，发送至<strong>您自行配置</strong>的模型服务（设置中的「模型服务地址」）。该服务由相应提供方运营，适用其自身的服务条款与隐私政策。</li>
+          <li><strong>我们（开发者）不上收：</strong>当前版本不包含将您的资料、提问、设备标识或使用行为发送至开发者自有分析、广告或崩溃统计服务器的功能。</li>
+        </ul>
+        <p>就「数据是否离开设备、并可被开发者或第三方访问」而言，本应用需向您说明的主要离机内容是<strong>用户内容</strong>（问题与资料摘录）。接收方是您配置的模型服务，不是开发者。仅保存在本机的资料库与问答记录，不构成向开发者收集上报。</p>
+      </section>
+
+      <section id="s3">
+        <h2>3. 我们处理哪些信息</h2>
+
+        <h3>3.1 为提供核心功能而在本机保存的信息</h3>
+        <p>下列信息保存在您的设备上。Windows 上的默认目录为当前用户的 <code>%LOCALAPPDATA%\wenda-tong</code>（即 <code>AppData\Local\wenda-tong</code>）。您也可以用环境变量 <code>WENDA_TONG_DATA</code> 指定其他目录。这些内容<strong>不会由本应用主动上传至开发者服务器</strong>：</p>
+        <table>
+          <thead>
+            <tr><th>类型</th><th>示例</th><th>目的</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>资料文件</td><td>您入库的原文、抽出的文字、检索数据</td><td>在本机按分类保存，并供提问时检索</td></tr>
+            <tr><td>分类</td><td>您自建的分类名称</td><td>组织资料；出处使用「分类名 · 文件名」</td></tr>
+            <tr><td>问答记录</td><td>时间、问题、回答、出处</td><td>在本机回看历史或删除单条记录</td></tr>
+            <tr><td>模型服务配置</td><td>服务地址、模型名称</td><td>连接您指定的对话模型</td></tr>
+            <tr><td>模型 API 密钥</td><td>您选填并保存在本机的密钥</td><td>向模型服务鉴权</td></tr>
+            <tr><td>界面偏好</td><td>文字大小</td><td>记住您选择的显示设置</td></tr>
+          </tbody>
+        </table>
+        <p>本应用不会为「备份到开发者云端」而复制您的资料全文。界面里不能打开或下载已入库的原文；要查看原文，请使用您自己保存的那份文件。</p>
+
+        <h3>3.2 为完成问答而可能离开本机的信息</h3>
+        <p>当您在问答中发送问题，且已配置可用的模型服务时，本应用可能将以下内容发送至该服务：</p>
+        <ul>
+          <li>当前问题；</li>
+          <li>同一轮对话中、为继续追问而附带的近期问答；</li>
+          <li>从已入库且状态为「可提问」的正文中检索出的摘录。</li>
+        </ul>
+        <p><strong>处理目的：</strong>由您配置的模型依据这些材料生成回答。资料里没有能支撑的内容时，回答会说明资料里没有这段记载。</p>
+        <p><strong>法律基础：</strong>履行您使用本应用所必需的服务；当您把接口配置为会处理敏感内容，或该接口位于境外时，还基于您主动配置并使用该地址的同意。</p>
+        <p>图片可以入库，但当前版本不能识别图中文字，因此不会把图中的字当作摘录发送。音频和视频不会入库。</p>
+
+        <h3>3.3 我们不会主动收集的信息</h3>
+        <p>本应用<strong>不提供账号注册或登录</strong>，因此不收集注册用的姓名、手机号、电子邮箱、密码等。</p>
+        <p>当前版本亦不主动收集：广告标识符、精确地理位置、通讯录、相机或麦克风内容、支付银行卡信息，也不通过第三方分析或广告组件向开发者上报崩溃或用量统计。</p>
+        <p>若您通过 Microsoft Store 获取本应用，微软可能按其自身隐私声明处理商店账号、下载与更新记录。本应用不会因此获得您的微软账号密码或支付信息。本应用免费，不含应用内购买。</p>
+
+        <h3>3.4 关于敏感个人信息</h3>
+        <p>本应用<strong>不主动采集</strong>生物识别、行踪轨迹等敏感个人信息类别。但您入库或输入的规定、笔记、报表、说明中，可能包含身份证号、联系方式、未公开事项等敏感或内部信息。</p>
+        <p>请您仅在有权处理的材料上使用本应用，并审慎选择模型服务的部署位置（优先本机或单位内网）。一旦摘录发往模型服务，将受该服务方的处理规则约束。</p>
+      </section>
+
+      <section id="s4">
+        <h2>4. 我们如何使用信息</h2>
+        <p>我们仅在下列目的范围内处理上述信息：</p>
+        <ol>
+          <li>提供与维护本应用功能（资料入库与分类、本机检索、问答、历史、模型设置、界面文字大小）；</li>
+          <li>在回答中标出出处，并在资料不能支撑时说明没有相应记载；</li>
+          <li>应您的请求提供支持（仅当您主动通过邮件向我们发送相关材料时，包括您报告生成内容不当或有害的情形）；</li>
+          <li>履行法律法规规定的义务。</li>
+        </ol>
+        <p>我们不会将您的本机资料或提问用于向您展示个性化广告，不会出售您的个人信息，也不会用这些内容训练开发者自己的模型。回答由您配置的模型生成，开发者不运营该模型。</p>
+      </section>
+
+      <section id="s5">
+        <h2>5. 委托处理、共享、转让与公开披露</h2>
+        <h3>5.1 模型服务提供方（第三方）</h3>
+        <p>为实现问答，您需要自行配置兼容的模型服务地址、模型名称，以及在该服务要求时填写的密钥。向该地址发送的问题与资料摘录，由<strong>相应模型服务提供方</strong>处理。请在使用前阅读并同意该提供方的条款与隐私政策，并确认其部署位置（本机、境内内网、公网或境外）符合您所在单位与适用法律的要求。</p>
+        <p>我们不会在您不知情的情况下，将您的内容发送至我们另行指定的、与您配置无关的模型服务。</p>
+        <h3>5.2 开发者</h3>
+        <p>除您主动来信并提供的信息外，当前版本<strong>不向开发者服务器共享</strong>您的资料、提问、回答或本机应用数据。</p>
+        <h3>5.3 转让与公开披露</h3>
+        <p>我们不会出售您的个人信息。如因合并、分立、重组等需转移个人信息处理相关资产，我们将要求承继方继续受本政策约束，或重新征得您的同意（法律另有规定的除外）。</p>
+        <p>非经法律要求或获得您的同意，我们不会公开披露您的个人信息。</p>
+        <h3>5.4 系统组件</h3>
+        <p>当前版本不嵌入面向开发者收集数据的第三方分析、广告类组件。窗口只在本机使用，界面通过系统中的 Microsoft Edge WebView2 显示本机页面；本应用借此加载的是本机界面，不把资料库提交给微软做产品分析。程序只在本机回环地址 <code>127.0.0.1:8091</code> 提供界面与接口，不向局域网中的其他电脑开放。</p>
+      </section>
+
+      <section id="s6">
+        <h2>6. 存储地点、期限与安全措施</h2>
+        <h3>6.1 存储地点</h3>
+        <ul>
+          <li><strong>本机数据：</strong>存储于您的 Windows 电脑本地磁盘（默认见第 3.1 节）。安装与升级不会把该目录上传到开发者的云端。</li>
+          <li><strong>模型服务侧：</strong>若发生离机传输，存储与保留规则由您配置的模型服务提供方决定，可能位于境内或境外机房。</li>
+        </ul>
+        <h3>6.2 保存期限</h3>
+        <ul>
+          <li>资料、问答记录、模型配置与界面偏好：在您保留本机资料目录期间持续保存。</li>
+          <li>您可以在「历史」中删除单条问答记录，在「资料」中删除文件或整个分类。删除后，相应内容不再参与回答。</li>
+          <li>从 Microsoft Store 卸载本应用会移除程序本身。本机资料目录默认仍会保留；要彻底清除，请在卸载后自行删除该文件夹（若您设置了 <code>WENDA_TONG_DATA</code>，请删除您指定的那个目录）。</li>
+          <li>发往模型服务的内容：以该服务方的保留政策为准。</li>
+        </ul>
+        <h3>6.3 安全措施</h3>
+        <p>我们采取与个人单机使用相匹配的措施，包括：资料与记录留在本机、检索在本机完成、窗口不向局域网开放、模型只连接您保存的地址。任何措施都无法保证绝对安全。请妥善保管您的设备与 API 密钥，并避免在不可信网络环境下把敏感材料发往公网模型。</p>
+      </section>
+
+      <section id="s7">
+        <h2>7. 跨境提供个人信息</h2>
+        <p>本应用本身不运营用于汇聚用户资料的境外服务器。</p>
+        <p>是否构成向境外提供个人信息，<strong>取决于您配置的模型服务地址</strong>：</p>
+        <ul>
+          <li>若地址指向<strong>本机或境内单位内网</strong>模型，通常不因本应用而额外产生向境外提供；</li>
+          <li>若地址指向<strong>境外或境外主体运营的公网模型服务</strong>，则您向该服务发送的问题与摘录可能构成跨境提供。此时，请您确认已满足适用的合法基础（如单独同意等），并遵守您所在单位及监管要求。</li>
+        </ul>
+        <p>我们建议机关与企事业单位用户优先配置<strong>单位审批的内网或本机模型</strong>。</p>
+      </section>
+
+      <section id="s8">
+        <h2>8. 您的权利</h2>
+        <p>在适用法律允许的范围内，您可以对个人信息行使以下权利：</p>
+        <table>
+          <thead>
+            <tr><th>权利</th><th>如何行使（当前版本）</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>知情与决定</td><td>通过本政策与应用内「设置」了解处理活动；可随时停止使用</td></tr>
+            <tr><td>查阅、复制</td><td>在「历史」中查看问答记录；本机资料目录中的文件与配置可自行查阅</td></tr>
+            <tr><td>更正、补充</td><td>在「设置」中修改模型服务地址、模型名称和密钥；在「资料」中替换文件或为分类改名</td></tr>
+            <tr><td>删除</td><td>删除单条历史、删除文件或分类；卸载应用后删除本机资料目录</td></tr>
+            <tr><td>撤回同意</td><td>停止提问，或改为您认可的模型服务；卸载应用并删除本机数据</td></tr>
+            <tr><td>账号注销</td><td>本应用无用户账号；卸载并清除本机资料目录即相当于停止使用</td></tr>
+          </tbody>
+        </table>
+        <p>因本应用无云端账号，<strong>不存在「向开发者云端注销账号」的流程</strong>。若您曾通过邮件向我们发送个人信息，可来信要求删除我们邮件系统中留存的对应内容（备份与法定期限内的除外）。</p>
+        <p>行使权利请联系：<a href="mailto:ailirenda@163.com">ailirenda@163.com</a>。</p>
+        <p>我们不会因您拒绝提供非必要信息而拒绝提供基本的本机功能。若未配置可用的模型服务，或还没有任何「可提问」的文件，则暂时不能发送问题；您仍可管理本机资料或卸载本应用。</p>
+      </section>
+
+      <section id="s9">
+        <h2>9. 未成年人保护</h2>
+        <p>本应用面向个人查阅资料的场景，主要供成年人使用。我们不会故意收集未满十四周岁未成年人的个人信息。若您是未成年人的监护人，发现未成年人在未经同意的情况下向模型服务提交了个人信息，请联系我们。我们将协助指导您在本机删除相关数据，并配合依法处理。</p>
+      </section>
+
+      <section id="s10">
+        <h2>10. 第三方产品与链接</h2>
+        <p>本应用对接的是由您自行填写地址的模型服务。该服务有独立的隐私与安全实践，请您自行审慎评估。本政策仅约束「问答通」个人单机版本身的数据处理行为。</p>
+      </section>
+
+      <section id="s11">
+        <h2>11. 本政策的变更</h2>
+        <p>我们可能适时修订本政策。更新后，我们将通过应用内提示、产品页面或本页面公布的方式告知生效日期。若变更导致处理目的、方式发生重大变化，我们将依法重新征得同意（如适用）。</p>
+        <p>请您定期查阅本页面以获取最新版本。</p>
+      </section>
+
+      <section id="s12">
+        <h2>12. Microsoft Store 隐私声明摘要</h2>
+        <p>下列摘要便于对照 Partner Center 中的隐私与生成式人工智能声明，详细规则以本政策正文为准：</p>
+        <table>
+          <thead>
+            <tr><th>类别</th><th>是否离开本机并可被第三方访问</th><th>用途</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>用户内容（问题、资料摘录）</td><td>是（发往您配置的模型服务时）</td><td>应用功能：生成回答</td></tr>
+            <tr><td>联系信息、账号标识</td><td>否（本应用不注册、不登录）</td><td>—</td></tr>
+            <tr><td>诊断数据、用量分析（向开发者）</td><td>否</td><td>—</td></tr>
+            <tr><td>位置、健康、财务（由本应用收集）</td><td>否</td><td>—</td></tr>
+          </tbody>
+        </table>
+        <p>本应用包含生成式人工智能功能。回答由您配置的模型根据检索摘录生成。开发者不运营该模型，也不使用您的资料或提问训练自有模型。若生成内容不当或有害，请写信至 <a href="mailto:ailirenda@163.com">ailirenda@163.com</a>。</p>
+      </section>
+
+      <section id="s13">
+        <h2>13. 如何联系我们</h2>
+        <ul>
+          <li>处理者：立人达创新工作室（Lirenda）</li>
+          <li>邮箱：<a href="mailto:ailirenda@163.com">ailirenda@163.com</a></li>
+          <li>网站：<a href="https://www.lirenda.cn">https://www.lirenda.cn</a></li>
+          <li>产品：问答通（Windows / Microsoft Store）</li>
+        </ul>
+        <p>如果您认为我们的个人信息处理行为损害了您的合法权益，您还可通过向有权机关投诉、举报或寻求司法救济等方式维护自身权益。</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>问答通 · 隐私政策单页　·　经 GitHub Pages 公开发布后，即可作为 Microsoft Store「隐私政策 URL」。</p>
+    </footer>
+  </div>
+</body>
+</html>
